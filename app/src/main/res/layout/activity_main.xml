@@ -14,8 +14,7 @@
         android:layout_width="250dp"
         android:layout_height="45dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
+        android:inputType="numberDecimal"
         android:hint="Input First Value"/>
 
     <EditText
@@ -23,12 +22,11 @@
         android:layout_width="250dp"
         android:layout_height="45dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
+        android:inputType="numberDecimal"
         android:hint="Input Second Value"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textResults"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -43,18 +41,21 @@
         android:id="@+id/buttonMinus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="subtraction"
         android:text="SUBTRACT (-)" />
 
     <Button
         android:id="@+id/buttonMultiply"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="multiplication"
         android:text="MULTIPLY (*)" />
 
     <Button
         android:id="@+id/buttonDivide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="division"
         android:text="DIVISION (/)" />
 
 </LinearLayout>
